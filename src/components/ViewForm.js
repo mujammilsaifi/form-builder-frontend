@@ -12,7 +12,7 @@ const ViewForm = () => {
   useEffect(() => {
     const fetchFormData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/api/forms/get-form/${id}`); 
+        const response = await axios.get(`https://form-builder-backend-lgps.onrender.com/api/forms/get-form/${id}`); 
         setFormData(response.data.form);
       } catch (error) {
         console.error('Error fetching form data:', error);

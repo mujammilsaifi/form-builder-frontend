@@ -15,7 +15,7 @@ const EditForm = () => {
   useEffect(() => {
     const fetchForm = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/api/forms/get-form/${id}`);
+        const response = await axios.get(`https://form-builder-backend-lgps.onrender.com/api/forms/get-form/${id}`);
         if(response.data.success){
           setTitle(response.data.form.title);
           setInputs(response.data.form.inputs);
@@ -62,7 +62,7 @@ const EditForm = () => {
     const formData = { title, inputs };
     try {
       const { data } = await axios.put(
-        `http://localhost:8080/api/forms/update-form/${id}`,
+        `https://form-builder-backend-lgps.onrender.com/api/forms/update-form/${id}`,
         formData
       );
       if (data.success) {

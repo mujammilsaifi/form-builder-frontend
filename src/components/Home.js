@@ -8,7 +8,7 @@ const Home = () => {
   const [forms, setForms] = useState([]);
 
   const getForms=async()=>{
-     const {data}= await axios.get('http://localhost:8080/api/forms/get-form');
+     const {data}= await axios.get('https://form-builder-backend-lgps.onrender.com/api/forms/get-form');
      if(data.success){
       setForms(data.forms)
      }
@@ -17,7 +17,7 @@ const Home = () => {
     getForms();
   }, []);
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:8080/api/forms/delete-form/${id}`)
+    axios.delete(`https://form-builder-backend-lgps.onrender.com/api/forms/delete-form/${id}`)
       .then(() => {
        getForms();
       })

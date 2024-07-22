@@ -47,7 +47,7 @@ const CreateForm = () => {
     const formData = { title, inputs };
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/forms/create-form",
+        "https://form-builder-backend-lgps.onrender.com/api/forms/create-form",
         formData
       );
       if (data.success) {
