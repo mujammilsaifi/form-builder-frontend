@@ -1,0 +1,321 @@
+.create-form-container{
+  text-align: center;
+}
+.create-form{
+  width: 70%;
+  margin: auto;
+  border: 1px solid #e2e2e2;
+}
+.form-first{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.form-container h2{
+  text-align: center;
+}
+.form-container p{
+  padding-bottom: 0px;
+  margin: 0px;
+}
+.form-container a button{
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.form-container {
+  max-width: 50%;
+  margin: auto;
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  margin-top: 40px;
+}
+
+/* ==========dynamic input =========== */
+.input-data {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-data input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+
+.input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  left: 0;
+}
+
+.input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.error-red{
+  background:rgb(235, 76, 76);
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+/* ================end============== */
+
+.form-title-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.form-builder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-preview {
+  flex: 2;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  background: #fff;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.form-preview h5,.form-preview h4 {
+  text-align: center;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 25px;
+}
+.form-preview h4 {
+  font-weight: 600;
+ 
+}
+.add-input{
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #0056b3;
+  color: #0056b3;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-controls {
+  display: flex;
+  align-items: center;
+}
+
+.input-title, .input-placeholder {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.submit-btn {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.form-editor {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.form-editor h3, .form-editor h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-type-btn {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input-type-btn:hover {
+  background: #0056b3;
+}
+
+.edit-input-section {
+  margin-top: 20px;
+}
+
+.edit-input-section label {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.create-form-btn {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+.input-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.form-input-preview {
+  display: flex;
+  width: 45%;
+  margin: 10px;
+  padding: 0px 5px;
+  margin-top: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.preview-container{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.edit-btn {
+  color: #007bff;
+}
+
+.delete-btn {
+  color: red;
+}
+.div-prev{
+  display: flex;
+  align-items: center;
+}
+
+.form-list-container {
+  margin-top: 30px;
+  margin: auto;
+  width: 50%;
+}
+
+.form-list-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.form-list-container p {
+  font-size: 1.2em;
+  text-align: start;
+  color: #666;
+}
+.form-list{
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px 30px 4px;
+}
+
+.form-list h2 {
+  margin: 0;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.form-list a {
+  margin-left: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form-list button {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  background-color:transparent;
+  cursor: pointer;
+}
